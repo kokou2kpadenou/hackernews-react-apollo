@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "prisma": "prisma"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "prisma-client-lib": "^1.31.0"
   },
   "devDependencies": {
+    "nodemon": "^1.19.1",
     "prisma": "^1.31.0"
   }
 }
