@@ -4,15 +4,18 @@ import { withRouter } from "react-router";
 import { AUTH_TOKEN } from "../constants";
 
 class Header extends Component {
-  state = {};
   render() {
     const authToken = localStorage.getItem(AUTH_TOKEN);
     return (
-      <div className="flex pal justify-between nowrap orange">
+      <div className="flex pal justify-between nowrap orange pa3">
         <div className="flex flex-fixed black">
-          <div className="fw7 mr1">Hacker News</div>
+          <div className="fw6 mr1">Hacker News</div>
           <Link className="ml1 no-underline black" to="/">
             new
+          </Link>
+          <div className="ml1">|</div>
+          <Link className="ml1 no-underline black" to="/top">
+            top
           </Link>
           <div className="ml1">|</div>
           <Link className="ml1 no-underline black" to="/search">
